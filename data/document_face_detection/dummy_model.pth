@@ -1,0 +1,3 @@
+self._model = TheModelClass()
+model_path = context.file.get_data_file(context.config.get("model.name"))
+self._model.load_state_dict(torch.load(model_path))

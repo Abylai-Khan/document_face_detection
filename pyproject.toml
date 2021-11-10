@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "document_face_detection"
+version = "0.0.1"
+description = ""
+authors = ["Abylaikhan <Abilay5787@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7.4,<3.10"
+podder-task-foundation = {git = "git://github.com/podder-ai/podder-task-foundation.git", rev = "main"}
+podder-task-foundation-commands-http = {git = "git@github.com:podder-ai/podder-task-foundation-commands-http.git", rev = "main"}
+podder-task-foundation-objects-image = {git = "git@github.com:podder-ai/podder-task-foundation-objects-image.git", rev = "main"}
+imutils = "^0.5.4"
+mtcnn = "^0.1.1"
+opencv-python = "^4.5.4"
+tensorflow = "^2.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+isort = "^5.6.0"
+yapf = "^0.30.0"
+pytest-cov = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+#### I ADD
+#ffmpeg-bitrate-stats = {git = "git@github.com:slhck/ffmpeg-bitrate-stats.git"}
